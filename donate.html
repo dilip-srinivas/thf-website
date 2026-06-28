@@ -89,7 +89,14 @@ footer{background:#0a0e0b;border-top:1px solid rgba(107,140,94,0.15);padding:5.5
 .reveal-delay-1{transition-delay:0.1s}.reveal-delay-2{transition-delay:0.2s}
 .reveal-delay-3{transition-delay:0.3s}.reveal-delay-4{transition-delay:0.4s}
 
-.page-hero{padding:10rem 3.5rem 5rem;background:linear-gradient(160deg,#0d1510 0%,#1b2a1e 60%,#0f1c12 100%);position:relative;overflow:hidden}
+.page-hero{padding:10rem 3.5rem 5rem;background:linear-gradient(160deg,#16241c 0%,#263b2a 60%,#1a2d1f 100%);position:relative;overflow:hidden}
+.page-hero-grid{display:grid;grid-template-columns:1.2fr 1fr;gap:5rem;align-items:center;max-width:1300px;margin:0 auto;position:relative;z-index:2}
+.page-hero-left{position:relative;z-index:1}
+.page-hero-right{position:relative;z-index:1;display:flex;justify-content:center;width:100%}
+.page-hero-image-wrap{width:100%;max-width:500px;height:320px;overflow:hidden;border:1px solid rgba(107,140,94,0.25);border-radius:2px;box-shadow:0 15px 35px rgba(0,0,0,0.45);transition:all 0.4s}
+.page-hero-image-wrap:hover{border-color:var(--ochre);transform:translateY(-4px)}
+.page-hero-image{width:100%;height:100%;object-fit:cover;transition:transform 0.6s ease}
+.page-hero-image-wrap:hover .page-hero-image{transform:scale(1.05)}
 .page-hero-inner{position:relative;z-index:1;max-width:700px}
 .donate-layout{max-width:980px;margin:0 auto}
 .bank-box{background:var(--forest-mid);border:1px solid rgba(107,140,94,0.2);padding:2.5rem;margin-top:1.25rem}
@@ -106,6 +113,8 @@ footer{background:#0a0e0b;border-top:1px solid rgba(107,140,94,0.15);padding:5.5
 @media (max-width:1100px){
   nav{padding:1rem 2rem}
   .nav-links{gap:1.2rem}
+  .page-hero-grid{grid-template-columns:1fr;gap:3rem}
+  .page-hero-image-wrap{height:280px;max-width:100%}
   .footer-top{grid-template-columns:1fr 1fr;gap:3rem}
 }
 
@@ -151,10 +160,17 @@ footer{background:#0a0e0b;border-top:1px solid rgba(107,140,94,0.15);padding:5.5
 </nav>
 
 <div class="page-hero">
-  <div class="page-hero-inner">
-    <div class="eyebrow">Support Us</div>
-    <h1 style="font-family:var(--font-display);font-size:clamp(3rem,6vw,6rem);font-weight:300;color:var(--cream);line-height:0.95;margin-bottom:2rem">Help Us<br><em style="font-style:italic;color:var(--ochre)">Protect</em><br>What Matters</h1>
-      <p style="font-size:1.1rem;color:var(--sand-dim);line-height:1.85;max-width:560px">The Heritage Foundation is a Registered Trust. Your donation goes directly toward fieldwork, documentation, community programmes, and forest restoration in the Nilgiris. All donations above INR 500 are eligible for 80G tax exemption.</p>
+  <div class="page-hero-grid">
+    <div class="page-hero-left">
+      <div class="eyebrow">Support Us</div>
+      <h1 style="font-family:var(--font-display);font-size:clamp(3rem,6vw,6rem);font-weight:300;color:var(--cream);line-height:0.95;margin-bottom:2rem">Help Us<br><em style="font-style:italic;color:var(--ochre)">Protect</em><br>What Matters</h1>
+      <p style="font-size:1.1rem;color:var(--sand-dim);line-height:1.85">The Heritage Foundation is a Registered Trust. Your donation goes directly toward fieldwork, documentation, community programmes, and forest restoration in the Nilgiris. All donations above INR 500 are eligible for 80G tax exemption.</p>
+    </div>
+    <div class="page-hero-right">
+      <div class="page-hero-image-wrap">
+        <img src="images/camp-farming.jpg" alt="Regenerative Farming and Ecological Impact" class="page-hero-image">
+      </div>
+    </div>
   </div>
 </div>
 <section class="section" style="background:var(--ink)" id="donate-form">
