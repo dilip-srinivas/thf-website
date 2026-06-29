@@ -38,7 +38,7 @@ export const metadata: Metadata = {
     siteName: "The Heritage Foundation",
     images: [
       {
-        url: "/images/hero-bg.jpg",
+        url: "/images/og-image.jpg",
         width: 1200,
         height: 630,
         alt: "The Heritage Foundation, Nilgiris",
@@ -51,7 +51,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "The Heritage Foundation | Ecological & Cultural Restoration, Nilgiris",
     description: "Protecting ancient forests, prehistoric rock art, indigenous cultures, and living craft traditions in the Nilgiris.",
-    images: ["/images/hero-bg.jpg"],
+    images: ["/images/og-image.jpg"],
   },
   icons: {
     icon: "/images/icon.svg",
