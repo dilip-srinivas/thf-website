@@ -1,0 +1,16 @@
+# Next.js build and export outputs
+.next/
+out/
+build/
+
+# Dependency directories
+node_modules/
+
+# TypeScript incremental build cache
+*.tsbuildinfo
+next-env.d.ts
+
+# OS metadata
+.DS_Store
+Thumbs.db
+desktop.ini
