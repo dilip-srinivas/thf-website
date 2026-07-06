@@ -28,9 +28,6 @@ export const metadata: Metadata = {
   title: "The Heritage Foundation | Ecological & Cultural Restoration, Nilgiris",
   description: "The Heritage Foundation works across the Nilgiris to protect ancient forests, prehistoric rock art, indigenous cultures, and living craft traditions. Registered trust, 12A/80G status, Kotagiri, Tamil Nadu.",
   metadataBase: new URL("https://the-heritage.org"),
-  alternates: {
-    canonical: "/",
-  },
   openGraph: {
     title: "The Heritage Foundation | Ecological & Cultural Restoration, Nilgiris",
     description: "Protecting ancient forests, prehistoric rock art, indigenous cultures, and living craft traditions in the Nilgiris.",
