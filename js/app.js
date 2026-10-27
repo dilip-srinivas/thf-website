@@ -1022,7 +1022,7 @@ function initSupportModal() {
   const modal = document.getElementById('support-watchdog-modal');
   if (!modal) return;
 
-  const supportBtns = document.querySelectorAll('.btn-support, [data-modal="support"]');
+  const supportBtns = document.querySelectorAll('[data-modal="support"]');
   const closeBtn = modal.querySelector('.modal-close-btn');
 
   function openModal(e) {
