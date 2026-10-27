@@ -29,6 +29,8 @@ const itemsToCopy = [
   'dockets.html',
   'report.html',
   'donate.html',
+  'robots.txt',
+  'sitemap.xml',
   'css',
   'js',
   'data',

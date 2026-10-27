@@ -1,0 +1,47 @@
+# ==============================================================================
+# The Heritage Foundation (the-heritage.org)
+# Official Nilgiri Biosphere Environmental Law & Statutory Dockets Registry
+# ==============================================================================
+
+User-agent: *
+Allow: /
+
+# Explicitly permit search engines, academic indexing & journalistic AI crawlers
+User-agent: Googlebot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: GoogleOther
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Slurp
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
+
+User-agent: Baiduspider
+Allow: /
+
+User-agent: YandexBot
+Allow: /
+
+User-agent: Applebot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: GPTBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+# Sitemap Index
+Sitemap: https://the-heritage.org/sitemap.xml
