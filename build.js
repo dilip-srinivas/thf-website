@@ -33,8 +33,7 @@ const itemsToCopy = [
   'js',
   'data',
   'images',
-  '_headers',
-  '_redirects'
+  '_headers'
 ];
 
 itemsToCopy.forEach((item) => {
@@ -45,4 +44,14 @@ itemsToCopy.forEach((item) => {
   }
 });
 
-console.log('Build completed successfully: All static pages and assets prepared in out/.');
+// Clean URL support: also write directory index files so both /page and /page.html resolve directly
+const cleanPages = ['interventions', 'dockets', 'report', 'donate'];
+cleanPages.forEach((page) => {
+  const pageDir = path.join(outDir, page);
+  if (!fs.existsSync(pageDir)) {
+    fs.mkdirSync(pageDir, { recursive: true });
+  }
+  fs.copyFileSync(path.join(__dirname, `${page}.html`), path.join(pageDir, 'index.html'));
+});
+
+console.log('Build completed successfully: Static assets and clean URLs generated in out/.');
