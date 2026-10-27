@@ -1,0 +1,334 @@
+{
+  "organization": {
+    "name": "The Heritage Foundation",
+    "acronym": "THF",
+    "headquarters": "Kotagiri, The Nilgiris, Tamil Nadu, India",
+    "jurisdiction": "Nilgiri Biosphere Reserve (Western Ghats)",
+    "statutory_initiative_launch": "2026",
+    "partner_initiatives": [
+      {
+        "name": "Forest First",
+        "url": "https://forestfirst.org",
+        "scope": "Native Shola-Grassland & Wetland Ecological Restoration"
+      }
+    ]
+  },
+  "active_dockets": [
+    {
+      "id": "THF/LEGAL/NIL-EM/2026/001",
+      "title": "Regulation of 15–35 HP Mini-Excavators ('Mini Kubota'), Destruction of Traditional Contour Terraces, and Unpermitted Residential Slope-Cutting",
+      "short_title": "Mini-Excavator Slope Regulation & Terrace Protection",
+      "category": "Geological Risk & Slope Conservation",
+      "status": "Active Statutory Notice Served",
+      "status_badge": "statutory-notice",
+      "filing_date": "15-10-2026",
+      "statutory_deadline": "2026-11-14",
+      "taluks": ["Kotagiri", "Coonoor", "Udhagamandalam"],
+      "statutory_enactments": [
+        "Disaster Management Act, 2005 (Sections 30, 34, 51)",
+        "District Collector Standing Order / Regulation Directive dated 02.03.2021 (Strict curbs on mechanical earthmovers on slopes)",
+        "Tamil Nadu District Municipalities (Hill Stations) Building Rules, 1993",
+        "Hill Area Conservation Authority (HACA) Mandatory Regulations",
+        "Environment (Protection) Act, 1986 (Sections 3 & 5)"
+      ],
+      "official_respondents": [
+        "The District Collector & Chairperson, District Disaster Management Authority (DDMA), The Nilgiris",
+        "The Executive Engineer, Agricultural Engineering Department, Udhagamandalam",
+        "The Regional Transport Officer (RTO), The Nilgiris Division",
+        "The Tahsildars of Kotagiri, Coonoor, and Udhagamandalam Taluks"
+      ],
+      "incident_trigger": "Triggered and escalated by the torrential October 22–24, 2026 monsoon deluge (200–250 mm recorded rainfall across Kotagiri and Coonoor ridges), resulting in catastrophic localized landslides, slope shear failures, and topsoil mudflows directly attributed to unpermitted 15–35 HP mini-excavators carving steep vertical cuts into fragile tea and agricultural contour terraces.",
+      "relief_sought": [
+        "Mandatory GPS registration and verifiable operational trip-permits for all 15–35 HP tracked mini-excavators operating in The Nilgiris.",
+        "Strict field enforcement of the District Collector's 02.03.2021 directive prohibiting mechanical cutting of steep gradients without certified geotechnical and Agricultural Engineering vetting.",
+        "Issuance of immediate stop-work orders and compulsory restorative retaining-wall mandates on identified unpermitted excavation sites."
+      ],
+      "dossier_summary": "Evidentiary docket compiled containing geocoded drone mapping, machine deployment logs, slope gradient measurements exceeding 30 degrees, and documented mudslide origin points. Accompanied by comprehensive Right to Information (RTI) discovery on machine licensing and municipal permissions.",
+      "priority": "Critical / High Threat"
+    },
+    {
+      "id": "THF/LEGAL/NIL-CW/2026/002",
+      "title": "Mandatory Closed-Loop Effluent Treatment & Silt-Traps for Commercial Vegetable-Washing Units under the Water Act, 1974",
+      "short_title": "Commercial Vegetable-Washing Effluent & Stream Siltation Control",
+      "category": "Freshwater Conservation & Pollution Control",
+      "status": "RTI Discovery & Evidence Dossier Stage",
+      "status_badge": "rti-discovery",
+      "filing_date": "28-09-2026",
+      "statutory_deadline": "2026-10-28",
+      "taluks": ["Kotagiri", "Udhagamandalam"],
+      "statutory_enactments": [
+        "Water (Prevention and Control of Pollution) Act, 1974 (Sections 24, 25, 33A)",
+        "Environment (Protection) Act, 1986 (Sections 7, 8)",
+        "Tamil Nadu River Basin Protection Guidelines",
+        "The Wetlands (Conservation and Management) Rules, 2017"
+      ],
+      "official_respondents": [
+        "The District Environmental Engineer, Tamil Nadu Pollution Control Board (TNPCB), Udhagamandalam",
+        "The Member Secretary, Tamil Nadu State Wetland Authority, Chennai",
+        "The Joint Director of Agriculture, Nilgiris District",
+        "The Executive Officers / Commissioners of Concerned Town Panchayats (Kotagiri, Ketti Valley)"
+      ],
+      "incident_trigger": "Sustained unmonitored operation of industrial-scale carrot and root-vegetable washing stations situated along natural perennial stream courses. These facilities abstract massive volumes of riparian surface water and release untreated, turbid wastewater dense with eroded volcanic silt, synthetic pesticides, fungicides, and chemical fertilizers directly into tributaries of the Bhavani and Moyar basins.",
+      "relief_sought": [
+        "Mandate installation of standardized three-chamber sedimentation tanks and closed-loop water recirculation systems for all commercial vegetable-washing establishments.",
+        "Immediate prohibition of raw slurry discharge and silt dumping into perennial streams, natural marshlands, and drainage gullies.",
+        "Institution of regular quarterly physicochemical and ecotoxicological water quality audits by TNPCB at all major washing cluster outflows."
+      ],
+      "dossier_summary": "14 active commercial washing locations documented with water sampling reports, turbidity measurements exceeding permissible standards by over 400%, and photographic proof of downstream siltation choking natural shola wetland beds.",
+      "priority": "Urgent"
+    },
+    {
+      "id": "THF/LEGAL/NIL-BF/2026/003",
+      "title": "Compilation of Unactioned Petitions on Reserve Forest Buffer Zone Constructions, Social Forest Encroachments, and Riverbank Alterations",
+      "short_title": "Reserve Forest Buffers & Riverbank Encroachment Dossier",
+      "category": "Forest & Habitat Protection",
+      "status": "Pre-Litigation Review (MHC Special Forest Bench)",
+      "status_badge": "pre-litigation",
+      "filing_date": "02-10-2026",
+      "statutory_deadline": "2026-11-01",
+      "taluks": ["Kotagiri", "Coonoor", "Gudalur", "Pandalur"],
+      "statutory_enactments": [
+        "Tamil Nadu Forest Act, 1882 (Sections 21 & 26)",
+        "Forest (Conservation) Act, 1980 / Forest Conservation Amendment Act, 2023",
+        "Supreme Court of India Guidelines in T.N. Godavarman Thirumulpad v. Union of India (Buffer Zones & Eco-Fragile Zones)",
+        "Tamil Nadu Protection of Tanks and Eviction of Encroachment Act, 2007",
+        "Article 48A & 51A(g) of the Constitution of India"
+      ],
+      "official_respondents": [
+        "The Principal Chief Conservator of Forests (Head of Forest Force), Chennai",
+        "The District Forest Officer (DFO), Nilgiris Division, Udhagamandalam",
+        "The District Collector & District Magistrate, The Nilgiris",
+        "The Member Secretary, Hill Area Conservation Authority (HACA), Chennai"
+      ],
+      "incident_trigger": "Failure of administrative authorities to act upon 24+ verified civic representations submitted between 2021 and 2026. These detailed ongoing illegal commercial developments, luxury guest houses, and earth-filling inside designated Reserve Forest 100-meter buffer strips, social forestry plantations, and seasonal wetland riparian corridors.",
+      "relief_sought": [
+        "Independent joint GIS boundary demarcation of disputed forest fringes and poramboke waterways by Revenue and Forest survey wings.",
+        "Sealing and revocation of provisional building clearances granted in violation of mandatory HACA and Eco-Sensitive Buffer restrictions.",
+        "Judicial directions under Article 226 before the Hon'ble Madras High Court Special Forest Bench compelling time-bound administrative disposal and restoration."
+      ],
+      "dossier_summary": "Consolidated paper trail comprising certified copies of unanswered petitions, survey department cadastre maps, satellite chronological time-lapse imagery demonstrating buffer encroachment, and municipal sanction irregularities.",
+      "priority": "Strategic Landmark"
+    },
+    {
+      "id": "THF/LEGAL/NIL-WL/2026/004",
+      "title": "Wetland Marsh Sponge Conversion, Peat Bog Destruction & Unregulated Over-Extraction from Existing Borewells",
+      "short_title": "High-Altitude Wetland Marsh Sponges & Borewell Over-Extraction",
+      "category": "Freshwater Conservation & Pollution Control",
+      "status": "Evidence Dossier & Hydrological Audit",
+      "status_badge": "statutory-notice",
+      "filing_date": "05-10-2026",
+      "statutory_deadline": "2026-11-04",
+      "taluks": ["Kotagiri", "Udhagamandalam", "Kundah"],
+      "statutory_enactments": [
+        "Wetlands (Conservation and Management) Rules, 2017",
+        "Water (Prevention and Control of Pollution) Act, 1974",
+        "Environment (Protection) Act, 1986",
+        "Central Ground Water Authority (CGWA) Guidelines & Supreme Court Mandates"
+      ],
+      "official_respondents": [
+        "The District Collector & DM, The Nilgiris",
+        "The Director, State Ground & Surface Water Resources Data Centre, Chennai",
+        "The District Environmental Engineer, TNPCB, Udhagamandalam",
+        "The Revenue Divisional Officers of Coonoor and Gudalur"
+      ],
+      "incident_trigger": "Systematic earth-filling, leveling, and permanent destruction of high-altitude valley sponge wetlands, perennial peat marshes, and shola swamps in Kotagiri, Ooty, and Kundah basins, combined with heavy commercial extraction from unmetered borewells drying up downstream natural springs and municipal drinking water intakes.",
+      "relief_sought": [
+        "Compulsory GPS cadastral demarcation of all montane wetland sponges and peat bogs across the Nilgiris.",
+        "Total permanent ban on soil-filling, ditching, and construction within designated wetland marsh buffers.",
+        "Compulsory digital metering and commercial sealing of unauthorized high-yield borewells operating without CGWA/Groundwater Authority clearance."
+      ],
+      "dossier_summary": "Hydrological audit dossier compiling spring discharge rates, borewell GPS mapping, and historical satellite time-lapse data documenting the loss of critical watershed sponge wetlands.",
+      "priority": "High Threat / Hydrological Security"
+    },
+    {
+      "id": "THF/LEGAL/NIL-BC/2026/006",
+      "title": "Hill Building Code Violations (>1:3 Slope, >7m Height) & Fenced Absentee Summer Villas Blocking Wildlife Corridors",
+      "short_title": "Hill Building Code Enforcement & Corridors Protection",
+      "category": "Geological Risk & Slope Conservation",
+      "status": "Pre-Litigation Evidence Audit",
+      "status_badge": "pre-litigation",
+      "filing_date": "18-10-2026",
+      "statutory_deadline": "2026-11-17",
+      "taluks": ["Kotagiri", "Coonoor", "Udhagamandalam", "Gudalur"],
+      "statutory_enactments": [
+        "Tamil Nadu District Municipalities (Hill Stations) Building Rules, 1993",
+        "Tamil Nadu Combined Development and Building Rules, 2019 (TNCDBR)",
+        "Hill Area Conservation Authority (HACA) Mandatory Norms",
+        "Wildlife (Protection) Act, 1972 (Sections 9 & 35)"
+      ],
+      "official_respondents": [
+        "The District Collector (Chairman, AAA / HACA Nodal Committee), The Nilgiris",
+        "The Regional Deputy Director, Directorate of Town and Country Planning (DTCP)",
+        "The District Forest Officer (DFO), Nilgiris Division",
+        "The Block Development Officers (BDOs) of Kotagiri, Coonoor, and Udhagamandalam"
+      ],
+      "incident_trigger": "Rampant proliferation of multi-story concrete vacation villas erected on fragile gradients exceeding 1:3 slope, breaching the 7-meter hill height ceiling, and erecting razor-wire/chainlink perimeter walls cutting off traditional elephant, gaur, and leopard movement corridors.",
+      "relief_sought": [
+        "Issuance of statutory demolition and stop-work notices for unauthorized multistory structures breaching the 1:3 slope gradient limit and 7-meter height rule.",
+        "Immediate removal of barbed-wire and concrete perimeter fencing obstructing recognized wildlife movement corridors.",
+        "Revocation of unauthorized panchayat building sanctions granted without mandatory HACA/DTCP clearance."
+      ],
+      "dossier_summary": "Site-inspection audit comprising laser slope-gradient measurements, building height verifications, drone photography, and corridor obstruction logs being compiled for filing before the Madras High Court Special Forest Bench.",
+      "priority": "Critical / High Hazard"
+    },
+    {
+      "id": "THF/LEGAL/NIL-FC/2026/007",
+      "title": "Total District-Wide Ban on Firecrackers in the Nilgiris (60% Forest Matrix & Avian Migration Protection ahead of Deepavali 08.11.2026)",
+      "short_title": "Total Firecracker Ban & Avian Sanctuary Shield",
+      "category": "Wildlife Sanctuary & Acoustic Shield",
+      "status": "Urgent Pre-Litigation Notice (7-Day Compliance)",
+      "status_badge": "pre-litigation",
+      "filing_date": "26-10-2026",
+      "statutory_deadline": "2026-11-02",
+      "taluks": ["Kotagiri", "Coonoor", "Udhagamandalam", "Kundah", "Gudalur", "Pandalur"],
+      "statutory_enactments": [
+        "Section 144 CrPC / Section 163 Bharatiya Nagarik Suraksha Sanhita, 2023 (BNSS)",
+        "Noise Pollution (Regulation and Control) Rules, 2000 (Rules 3, 5, 8)",
+        "Wildlife (Protection) Act, 1972 (Sections 2(16), 9, 35, 39)",
+        "Environment (Protection) Act, 1986 (Sections 3 & 5)",
+        "Disaster Management Act, 2005 (Sections 30 & 34)",
+        "Supreme Court Directives in Arjun Gopal v. Union of India (2018 & 2021) and In Re: Noise Pollution (2005)"
+      ],
+      "official_respondents": [
+        "The District Collector & District Magistrate, The Nilgiris",
+        "The Superintendent of Police, Nilgiris District",
+        "The District Forest Officer (DFO), Nilgiris Forest Division",
+        "The District Forest Officer (DFO), Gudalur Forest Division",
+        "The District Environmental Engineer, TNPCB, Udhagamandalam"
+      ],
+      "incident_trigger": "Unlike plains districts, over 60% of the Nilgiris District is forest, and almost every settlement—especially secluded absentee vacation villas and resorts—sits directly on a forest fringe or wildlife corridor. High-decibel detonations during the peak October–November winter bird migration season trigger severe acoustic shock, panic stampedes among gaurs and elephants provoking human-wildlife encounters, and catastrophic nesting abandonment for Palearctic and Himalayan migratory birds.",
+      "relief_sought": [
+        "Immediate promulgation of prohibitory orders under Section 144 CrPC / Section 163 BNSS imposing a complete district-wide ban on the storage, transport, sale, and bursting of all firecrackers across The Nilgiris ahead of Deepavali (08.11.2026).",
+        "Binding injunctions upon commercial hotels, resorts, and vacation villas prohibiting fireworks displays under penalty of trade license cancellation.",
+        "Round-the-clock ghat road check-post seizures (Burliar, Katteri, Kakkanallah) and flying squad patrols.",
+        "Emergency mentioning before the Madras High Court Special Forest Bench under Article 226 in default of compliance within 7 days."
+      ],
+      "dossier_summary": "Urgent 7-day pre-litigation statutory notice served on 26.10.2026 upon District Collector & SP Nilgiris ahead of Deepavali (08.11.2026) in continuation of representations submitted since October 2023 (tenure of then Collector Tmt. M. Aruna, I.A.S.) and reiterated in 2024 and 2025. Pre-drafted Public Interest Litigation (Writ of Mandamus) ready for High Court mentioning on 03.11.2026.",
+      "priority": "Emergency / 7-Day Deadline"
+    }
+  ],
+  "past_interventions": [
+    {
+      "id": "THF-HIST-001",
+      "title": "Halting the 6,000 Sq. Ft. Concrete Construction Inside Longwood Shola Reserve Forest (Kotagiri)",
+      "category": "Direct Civic Agitation & Forest Defense",
+      "year": "2023–2024",
+      "location": "Longwood Shola Reserve Forest, Kotagiri",
+      "summary": "Spearheaded sustained public agitation, environmental fact-finding, and official representations against the Tamil Nadu Forest Department's proposal to construct a massive 6,000 sq. ft. concrete interpretation center inside the pristine, ancient Longwood Shola Reserve Forest—the sole surviving high-altitude urban shola and pivotal micro-watershed supplying drinking water to Kotagiri town. Following overwhelming public outcry, ecological evidence presentation, and sustained media coverage, the state government formally abandoned the interior forest construction plan.",
+      "press_citation": {
+        "publication": "The Hindu",
+        "title": "Protests against construction in Longwood Shola Reserve Forest intensify in the Nilgiris",
+        "url": "https://www.thehindu.com/news/national/tamil-nadu/protests-against-construction-in-longwood-shola-reserve-forest-intensify-in-the-nilgiris/article67575888.ece",
+        "date": "November 26, 2023"
+      },
+      "key_outcomes": [
+        "Complete withdrawal of the 6,000 sq. ft. concrete construction proposal inside the Reserve Forest boundary.",
+        "Preservation of undisturbed canopy and vital groundwater aquifer feeding Kotagiri.",
+        "Establishment of institutional vigilance and community stewardship over the Ramsar-recognized ecosystem."
+      ],
+      "locus_standi_relevance": "Direct proof of organizational capacity to mobilize community oversight, substantiate scientific grievances, and enforce preservation of ecologically vulnerable public commons."
+    },
+    {
+      "id": "THF-HIST-002",
+      "title": "Wildlife Crime Surveillance & Anti-Poaching Apprehension",
+      "category": "Anti-Poaching & Wildlife Enforcement",
+      "year": "2022–2025",
+      "location": "Kotagiri & Coonoor Forest Interfaces",
+      "summary": "Conducted covert ground tracking and intelligence gathering on illegal wire snares, small-mammal poaching, and bird trapping across the plantation-forest interface. Documented active wildlife poaching and handed over definitive geolocated evidence directly to the Tamil Nadu Forest Department flying squad, resulting in an immediate raid, apprehension of the accused, and formal registration of a wildlife offense case under the Wildlife Protection Act, 1972.",
+      "press_citation": null,
+      "key_outcomes": [
+        "Immediate apprehension of poacher and confiscation of crude snares and illicit implements.",
+        "Formal registration of statutory Wildlife Offense Case by Tamil Nadu Forest Department.",
+        "Routine de-snaring patrols instituted along critical corridor borders."
+      ],
+      "locus_standi_relevance": "Established credible evidentiary field surveillance capability and proactive cooperation with statutory forest enforcement agencies."
+    },
+    {
+      "id": "THF-HIST-003",
+      "title": "Reserve Forest Buffer Zone Surveillance & Illegal Tree-Felling Injunctions",
+      "category": "Buffer Zone Vigilance & Forest Act Representations",
+      "year": "2021–2025",
+      "location": "Kotagiri Taluk & Surrounds",
+      "summary": "Systematically surveyed and exposed illegal commercial resort developments attempting to bypass the 100-meter statutory Reserve Forest buffer perimeter. Formally lodged detailed representations with the District Collector and DFO detailing unpermitted nighttime felling of native shola trees and slope-stabilizing canopy on private holdings, triggering official spot inspections and penalty proceedings.",
+      "press_citation": null,
+      "key_outcomes": [
+        "Official spot-inspections conducted by Forest Rangers on reported illegal tree-felling coordinates.",
+        "Halt on unauthorized grading operations adjacent to Reserve Forest boundaries.",
+        "Comprehensive photo-archive of forest fringe incursions created for ongoing legal dockets."
+      ],
+      "locus_standi_relevance": "Direct administrative engagement highlighting systemic enforcement bottlenecks that necessitate structured judicial remedies."
+    },
+    {
+      "id": "THF-HIST-004",
+      "title": "Social Forestry & Poramboke Riverbank Encroachment Petitions",
+      "category": "Riparian Watershed & Revenue Land Protection",
+      "year": "2021–2025",
+      "location": "Kotagiri, Ketti Valley & Stream Corridors",
+      "summary": "Carried out continuous administrative petitioning against the illicit conversion of government social forestry reserves, grazing poramboke, and stream headwaters into commercial tea estates and private residential layouts. Leveraged historical revenue village maps to pinpoint unrecorded encroachments on drainage pathways.",
+      "press_citation": null,
+      "key_outcomes": [
+        "Administrative notices issued by Revenue Tahsildar to clear obstructed feeder streams.",
+        "Prevented physical diversion of two perennial natural spring corridors.",
+        "Built comprehensive evidentiary register of unaddressed representations for the 2026 Special Forest Bench filings."
+      ],
+      "locus_standi_relevance": "Forms the foundational evidentiary basis of Docket THF/LEGAL/NIL-BF/2026/003."
+    },
+    {
+      "id": "THF-HIST-005",
+      "title": "Grassroots Ecological Restoration with 'Forest First'",
+      "category": "Ecological Restoration & Native Species Regeneration",
+      "year": "2020–Present",
+      "location": "Nilgiri Biosphere Reserve Highlands",
+      "summary": "In parallel with regulatory vigilance, fostered the hands-on ecological restoration of degraded shola-grassland patches and riparian wetlands in the Nilgiris through our sister initiative Forest First (forestfirst.org). Eradicated invasive alien wattle and cestrum while propagating endemic shola saplings and native tussock grasses to stabilize eroded slopes.",
+      "press_citation": {
+        "publication": "Forest First Initiative",
+        "title": "Native Shola-Grassland & Wetland Ecological Restoration",
+        "url": "https://forestfirst.org",
+        "date": "Ongoing"
+      },
+      "key_outcomes": [
+        "Successful revival of endemic micro-habitats and shola species nursery.",
+        "Demonstrated that ecological defense must walk hand-in-hand with restorative field science."
+      ],
+      "locus_standi_relevance": "Grounds our legal advocacy in profound, practical domain expertise in montane forest hydrology and native flora."
+    }
+  ],
+  "crisis_matrix": [
+    {
+      "code": "CRISIS-01",
+      "name": "Unregulated Tracked Mini-Excavators & Slope Terracing",
+      "risk_level": "Catastrophic / Active Landslide Hazard",
+      "primary_driver": "Rapid proliferation of 15–35 HP compact tracked backhoes ('Mini Kubota') hired informally to slice vertical 70–90° cuts into high-gradient hillsides for unpermitted residential and agricultural plots.",
+      "ecological_consequence": "Destruction of centuries-old Badaga contour terraces, structural fracturing of sub-surface colluvium, and severe landslide failure during high-intensity rainfall events (200mm+), as seen in the late October 2026 disasters.",
+      "statutory_anchor": "Disaster Management Act 2005; Nilgiris District Collector Order 02.03.2021",
+      "action_pathway": "Mandatory GPS fleet tracking, strict permit gatekeeping, and judicial injunctions against unpermitted machines."
+    },
+    {
+      "code": "CRISIS-02",
+      "name": "Commercial Vegetable-Washing Effluent & Stream Siltation",
+      "risk_level": "Severe / Aquatic Ecosystem Collapse",
+      "primary_driver": "Industrial-scale washing of root vegetables (carrots, potatoes) directly within or adjacent to perennial hill streams without silt retention or wastewater treatment.",
+      "ecological_consequence": "Millions of litres of topsoil slurry laced with pesticide residues discharged into Moyar and Bhavani headwaters. Massive silt deposition suffocates riverbed gravel, extirpates endemic fish/amphibian breeding zones, and fills reservoirs.",
+      "statutory_anchor": "Water (Prevention and Control of Pollution) Act 1974; Environment (Protection) Act 1986",
+      "action_pathway": "Mandatory closed-loop effluent recycling, settling ponds, and pollution control prosecution."
+    },
+    {
+      "code": "CRISIS-03",
+      "name": "Reserve Forest Perimeter & Buffer Encroachment",
+      "risk_level": "High / Habitat Fragmentation",
+      "primary_driver": "Gradual expansion of resort estates, concrete retaining walls, and tourist cottages within the mandatory 100-metre buffer perimeter of declared Reserve Forests.",
+      "ecological_consequence": "Interruption of wildlife migratory routes (Gaur, Leopard, Asian Elephant, Nilgiri Tahr), heightened human-wildlife conflict, and canopy fragmentation along sensitive forest fringes.",
+      "statutory_anchor": "Tamil Nadu Forest Act 1882; Supreme Court Orders in Godavarman Batch; HACA Norms",
+      "action_pathway": "Composite pre-litigation notice before Madras High Court Special Forest Bench and demolition of unauthorized buffer edifices."
+    },
+    {
+      "code": "CRISIS-04",
+      "name": "Riparian Wetland & Poramboke Watershed Drainage",
+      "risk_level": "Severe / Loss of Town Drinking Water",
+      "primary_driver": "Dumping of construction debris and agricultural conversion in valley bottom wetlands (vavus/bogs) that act as natural sponge aquifers for hill settlements.",
+      "ecological_consequence": "Flash flooding during monsoons followed by severe acute water scarcity in Kotagiri, Coonoor, and Ooty during summer months.",
+      "statutory_anchor": "Wetlands Rules 2017; TN Protection of Tanks & Eviction of Encroachment Act 2007",
+      "action_pathway": "Cadastral survey boundary protection, restoration of sponge hydrology with Forest First."
+    }
+  ]
+}
