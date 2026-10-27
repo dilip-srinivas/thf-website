@@ -20,6 +20,7 @@ const THF_CONFIG = {
 
 document.addEventListener('DOMContentLoaded', () => {
   initMobileNav();
+  initSupportModal();
   initFormspreeHandler();
   initDocketsObservatory();
   initMilestonesExpander();
@@ -223,6 +224,15 @@ function buildDocketCardHTML(docket) {
             ${reliefList}
           </ul>
         </div>
+
+        ${docket.latest_update ? `
+        <div class="docket-latest-update">
+          <div class="docket-update-label">
+            <span class="pulse-dot-amber"></span>
+            <strong>Latest Statutory Filing &amp; Ground Audit (26.10.2026)</strong>
+          </div>
+          <p class="docket-update-text">${escapeHTML(docket.latest_update)}</p>
+        </div>` : ''}
       </div>
 
       <div class="docket-footer">
@@ -1001,6 +1011,48 @@ function initCsrInquiryForm() {
         submitBtn.disabled = false;
         submitBtn.innerHTML = originalText;
       }
+    }
+  });
+}
+
+/**
+ * Support the Watchdog Two-Stage Modal Handler
+ */
+function initSupportModal() {
+  const modal = document.getElementById('support-watchdog-modal');
+  if (!modal) return;
+
+  const supportBtns = document.querySelectorAll('.btn-support, [data-modal="support"]');
+  const closeBtn = modal.querySelector('.modal-close-btn');
+
+  function openModal(e) {
+    if (e) e.preventDefault();
+    modal.classList.add('is-active');
+    modal.setAttribute('aria-hidden', 'false');
+    document.body.style.overflow = 'hidden';
+  }
+
+  function closeModal() {
+    modal.classList.remove('is-active');
+    modal.setAttribute('aria-hidden', 'true');
+    document.body.style.overflow = '';
+  }
+
+  supportBtns.forEach(btn => {
+    btn.addEventListener('click', openModal);
+  });
+
+  if (closeBtn) {
+    closeBtn.addEventListener('click', closeModal);
+  }
+
+  modal.addEventListener('click', (e) => {
+    if (e.target === modal) closeModal();
+  });
+
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && modal.classList.contains('is-active')) {
+      closeModal();
     }
   });
 }

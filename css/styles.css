@@ -2324,3 +2324,284 @@ textarea.form-control {
     gap: 2rem;
   }
 }
+
+/* ==========================================================================
+   SUPPORT THE WATCHDOG (TWO-STAGE EMPANELMENT & GRANTS) & DOCKET UPDATES
+   ========================================================================== */
+
+/* --- Docket Latest Update Box --- */
+.docket-latest-update {
+  margin-top: 1.25rem;
+  background: rgba(180, 83, 9, 0.07);
+  border: 1px solid rgba(217, 119, 6, 0.25);
+  border-left: 4px solid #D97706;
+  padding: 0.9rem 1.15rem;
+  border-radius: var(--radius-sm);
+}
+
+.docket-update-label {
+  font-family: var(--font-mono);
+  font-size: 0.74rem;
+  text-transform: uppercase;
+  color: #B45309;
+  letter-spacing: 0.06em;
+  margin-bottom: 0.35rem;
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+}
+
+.pulse-dot-amber {
+  display: inline-block;
+  width: 7px;
+  height: 7px;
+  background-color: #D97706;
+  border-radius: 50%;
+  box-shadow: 0 0 0 rgba(217, 119, 6, 0.5);
+  animation: pulse-amber 2s infinite;
+}
+
+@keyframes pulse-amber {
+  0% { box-shadow: 0 0 0 0 rgba(217, 119, 6, 0.7); }
+  70% { box-shadow: 0 0 0 6px rgba(217, 119, 6, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(217, 119, 6, 0); }
+}
+
+.docket-update-text {
+  font-size: 0.86rem;
+  line-height: 1.55;
+  color: #1F2937;
+  margin: 0;
+}
+
+/* --- Support the Watchdog Two-Stage Flow (Page & Modal) --- */
+.support-container-box {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.support-stage-primary {
+  background: #FFFFFF;
+  border: 1px solid var(--color-stone-border);
+  border-radius: var(--radius-md);
+  padding: 2.75rem 2.5rem;
+  box-shadow: var(--shadow-sm);
+}
+
+.support-stage-badge {
+  display: inline-block;
+  font-family: var(--font-mono);
+  font-size: 0.74rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #92400E;
+  background: rgba(180, 83, 9, 0.1);
+  border: 1px solid rgba(180, 83, 9, 0.2);
+  padding: 0.3rem 0.75rem;
+  border-radius: 9999px;
+  margin-bottom: 1rem;
+}
+
+.support-stage-title {
+  font-family: var(--font-display);
+  font-size: clamp(1.6rem, 2.8vw, 2.2rem);
+  color: var(--color-shola-deep);
+  margin-bottom: 1rem;
+  line-height: 1.25;
+}
+
+.support-stage-desc {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: #374151;
+  margin-bottom: 2rem;
+}
+
+.empanelment-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  margin-bottom: 2.25rem;
+}
+
+.empanelment-card {
+  background: #F9FAFB;
+  border: 1px solid #E5E7EB;
+  border-radius: var(--radius-sm);
+  padding: 1.5rem 1.25rem;
+  transition: transform var(--transition-fast), border-color var(--transition-fast), box-shadow var(--transition-fast);
+}
+
+.empanelment-card:hover {
+  transform: translateY(-2px);
+  border-color: #D97706;
+  box-shadow: var(--shadow-md);
+}
+
+.empanelment-card-icon {
+  font-size: 1.6rem;
+  margin-bottom: 0.75rem;
+}
+
+.empanelment-card h4 {
+  font-family: var(--font-display);
+  font-size: 1.05rem;
+  color: var(--color-shola-deep);
+  margin-bottom: 0.5rem;
+  line-height: 1.35;
+}
+
+.empanelment-card p {
+  font-size: 0.86rem;
+  line-height: 1.55;
+  color: #4B5563;
+  margin: 0;
+}
+
+.support-cta-wrap {
+  text-align: center;
+  padding-top: 0.5rem;
+}
+
+/* STAGE 2 Sub-Panel */
+.support-stage-secondary {
+  margin-top: 2rem;
+  background: #F8FAFC;
+  border: 1px solid #CBD5E1;
+  border-left: 4px solid var(--color-shola);
+  border-radius: var(--radius-sm);
+  padding: 1.75rem 2rem;
+}
+
+.support-secondary-badge {
+  display: inline-block;
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--color-shola-deep);
+  background: rgba(11, 32, 22, 0.08);
+  padding: 0.25rem 0.65rem;
+  border-radius: 9999px;
+  margin-bottom: 0.75rem;
+}
+
+.support-secondary-title {
+  font-family: var(--font-display);
+  font-size: 1.25rem;
+  color: var(--color-shola-deep);
+  margin-bottom: 0.65rem;
+}
+
+.support-secondary-desc {
+  font-size: 0.92rem;
+  line-height: 1.65;
+  color: #475569;
+  margin: 0;
+}
+
+.support-secondary-desc a {
+  color: var(--color-shola);
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.support-secondary-desc a:hover {
+  color: var(--color-amber-hover);
+}
+
+/* --- Support Modal Styles --- */
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(8, 24, 16, 0.82);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  z-index: 9999;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+  opacity: 0;
+  transition: opacity 0.25s ease;
+}
+
+.modal-backdrop.is-active {
+  display: flex;
+  opacity: 1;
+}
+
+.modal-dialog {
+  background: #FFFFFF;
+  border: 1px solid var(--color-stone-border);
+  border-radius: var(--radius-md);
+  max-width: 920px;
+  width: 100%;
+  max-height: 90vh;
+  overflow-y: auto;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.45);
+  position: relative;
+  transform: translateY(20px);
+  transition: transform 0.25s ease;
+}
+
+.modal-backdrop.is-active .modal-dialog {
+  transform: translateY(0);
+}
+
+.modal-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.25rem 2rem;
+  border-bottom: 1px solid rgba(246, 245, 240, 0.1);
+  background: var(--color-shola-deep);
+  color: var(--color-stone);
+}
+
+.modal-eyebrow {
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--color-amber-hover);
+}
+
+.modal-close-btn {
+  background: transparent;
+  border: none;
+  color: #D1D5DB;
+  font-size: 1.75rem;
+  line-height: 1;
+  cursor: pointer;
+  padding: 0 0.5rem;
+  transition: color 0.2s;
+}
+
+.modal-close-btn:hover {
+  color: #FFFFFF;
+}
+
+.modal-body {
+  padding: 2.25rem 2.25rem;
+}
+
+@media (max-width: 820px) {
+  .empanelment-cards-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  .support-stage-primary {
+    padding: 1.75rem 1.25rem;
+  }
+  .modal-body {
+    padding: 1.5rem 1.25rem;
+  }
+}
+
