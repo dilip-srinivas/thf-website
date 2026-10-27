@@ -2440,8 +2440,29 @@ textarea.form-control {
 }
 
 .empanelment-card-icon {
-  font-size: 1.6rem;
-  margin-bottom: 0.75rem;
+  width: 44px;
+  height: 44px;
+  border-radius: var(--radius-sm);
+  background: rgba(11, 32, 22, 0.05);
+  border: 1px solid rgba(11, 32, 22, 0.12);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-shola-deep);
+  margin-bottom: 1rem;
+  transition: all var(--transition-fast);
+}
+
+.empanelment-card:hover .empanelment-card-icon {
+  background: var(--color-shola-deep);
+  color: var(--color-amber-hover);
+  border-color: var(--color-shola-deep);
+}
+
+.empanelment-svg-icon {
+  width: 22px;
+  height: 22px;
+  display: block;
 }
 
 .empanelment-card h4 {
