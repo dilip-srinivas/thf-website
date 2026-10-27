@@ -1464,6 +1464,89 @@ textarea.form-control {
   color: var(--color-amber-hover);
 }
 
+/* --- Statutory RPAD Letterhead Disclosure Block --- */
+.statutory-rpad-block {
+  border-top: 1px solid rgba(246, 245, 240, 0.12);
+  border-bottom: 1px solid rgba(246, 245, 240, 0.12);
+  background: rgba(0, 0, 0, 0.22);
+  border-radius: var(--radius-sm);
+  padding: 1.75rem 2rem;
+  margin-top: 2rem;
+  margin-bottom: 2.5rem;
+}
+
+.statutory-rpad-title {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--color-amber-hover);
+  margin-bottom: 1.25rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.statutory-rpad-title::before {
+  content: "";
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  background-color: var(--color-amber-hover);
+  border-radius: 50%;
+}
+
+.statutory-rpad-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2.25rem;
+}
+
+.statutory-rpad-col h6 {
+  font-family: var(--font-mono);
+  font-size: 0.76rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--color-stone);
+  margin-bottom: 0.65rem;
+  border-bottom: 1px solid rgba(246, 245, 240, 0.08);
+  padding-bottom: 0.4rem;
+}
+
+.statutory-rpad-col p {
+  font-size: 0.83rem;
+  line-height: 1.6;
+  color: #9CA3AF;
+  margin: 0;
+}
+
+.statutory-rpad-col .statutory-meta {
+  display: inline-block;
+  margin-top: 0.45rem;
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  color: #D1D5DB;
+}
+
+.statutory-rpad-col a {
+  color: #FBBF24;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.statutory-rpad-col a:hover {
+  color: #F59E0B;
+}
+
+@media (max-width: 900px) {
+  .statutory-rpad-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+}
+
 .footer-bottom {
   border-top: 1px solid rgba(246, 245, 240, 0.08);
   padding-top: 2rem;
