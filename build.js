@@ -31,6 +31,8 @@ const itemsToCopy = [
   'donate.html',
   'robots.txt',
   'sitemap.xml',
+  'favicon.ico',
+  'apple-touch-icon.png',
   'css',
   'js',
   'data',
