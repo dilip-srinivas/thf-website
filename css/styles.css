@@ -288,6 +288,7 @@ p.lead {
   color: #9CA3AF;
   text-transform: uppercase;
   letter-spacing: 0.08em;
+  white-space: nowrap;
 }
 
 /* Nav Menu */
@@ -2262,6 +2263,12 @@ textarea.form-control {
 }
 
 @media (max-width: 768px) {
+  .brand-subtitle {
+    white-space: normal;
+    font-size: 0.62rem;
+    line-height: 1.25;
+  }
+
   .top-notice-bar {
     font-size: 0.7rem;
     flex-direction: column;
