@@ -178,9 +178,7 @@ function buildDocketCardHTML(docket) {
           <div class="docket-meta">
             <span class="docket-number">${escapeHTML(docket.id)}</span>
             <span class="docket-badge-status ${badgeClass}">${escapeHTML(docket.status)}</span>
-            <span class="docket-countdown-pill ${deadlineInfo.isUrgent ? 'urgent' : ''}">
-              ⏱ ${escapeHTML(deadlineInfo.text)}
-            </span>
+            
           </div>
           <div style="margin-top: 0.4rem;">
             ${talukTags}
@@ -190,7 +188,7 @@ function buildDocketCardHTML(docket) {
           </div>
         </div>
         <div style="text-align: right; font-family: var(--font-mono); font-size: 0.8rem; color: var(--color-charcoal-subtle);">
-          Filed: <strong>${escapeHTML(formatDateDDMMYYYY(docket.filing_date))}</strong>
+          Initiated: <strong>${escapeHTML(formatDateDDMMYYYY(docket.filing_date))}</strong>
         </div>
       </div>
 
@@ -198,20 +196,20 @@ function buildDocketCardHTML(docket) {
         <h3 class="docket-title">${escapeHTML(docket.title)}</h3>
 
         <div class="docket-incident">
-          <strong>Ground Incident & Statutory Trigger</strong>
+          <strong>What Happened & Why It Matters</strong>
           ${escapeHTML(docket.incident_trigger)}
         </div>
 
         <div class="docket-spec-grid">
           <div class="spec-block">
-            <span class="spec-label">Statutory Enactments & Standing Orders</span>
+            <span class="spec-label">Relevant Laws & Orders</span>
             <ul class="spec-list">
               ${enactmentsList}
             </ul>
           </div>
 
           <div class="spec-block">
-            <span class="spec-label">Official Impleaded Respondents</span>
+            <span class="spec-label">Authorities Engaged</span>
             <ul class="spec-list">
               ${respondentsList}
             </ul>
@@ -219,7 +217,7 @@ function buildDocketCardHTML(docket) {
         </div>
 
         <div class="milestone-outcomes">
-          <div class="milestone-outcomes-title">Specific Legal Relief & Prayers Sought</div>
+          <div class="milestone-outcomes-title">Remedies Requested</div>
           <ul>
             ${reliefList}
           </ul>
@@ -229,7 +227,7 @@ function buildDocketCardHTML(docket) {
         <div class="docket-latest-update">
           <div class="docket-update-label">
             <span class="pulse-dot-amber"></span>
-            <strong>Latest Statutory Filing &amp; Ground Audit (26.10.2026)</strong>
+            <strong>Latest Update &amp; Ground Audit (26.10.2026)</strong>
           </div>
           <p class="docket-update-text">${escapeHTML(docket.latest_update)}</p>
         </div>` : ''}
@@ -237,11 +235,11 @@ function buildDocketCardHTML(docket) {
 
       <div class="docket-footer">
         <div>
-          <span style="font-family: var(--font-mono); font-size: 0.76rem; text-transform: uppercase; color: var(--color-charcoal-subtle); display: block;">Evidentiary Dossier Status</span>
+          <span style="font-family: var(--font-mono); font-size: 0.76rem; text-transform: uppercase; color: var(--color-charcoal-subtle); display: block;">Documentation Status</span>
           <span style="font-size: 0.88rem; color: var(--color-charcoal);">${escapeHTML(docket.dossier_summary)}</span>
         </div>
         <a href="report.html?docket=${encodeURIComponent(docket.id)}" class="btn btn-outline-dark btn-sm">
-          Submit Evidence on This Docket →
+          Share an Observation on This Initiative →
         </a>
       </div>
     </article>
@@ -379,7 +377,7 @@ function initFormspreeHandler() {
       } else if (docketParam.includes('NIL-WL')) {
         violationSelect.value = 'Wetland Marsh Infilling / Illegal Borewell Extraction';
       } else if (docketParam.includes('NIL-BC')) {
-        violationSelect.value = 'Hill Building Code Violation (>7m Height / >1:3 Slope Cut / Within 30m Landslide Buffer)';
+        violationSelect.value = 'Hill Building Rules (>7m Height / >1:3 Slope Cut / Within 30m Landslide Buffer)';
       }
     }
     const descField = form.querySelector('#description');
@@ -402,17 +400,17 @@ function initFormspreeHandler() {
     const isConfidential = form.querySelector('#confidentiality') ? form.querySelector('#confidentiality').checked : true;
 
     return (
-      `*THE HERITAGE FOUNDATION — ECOLOGICAL VIOLATION REPORT*\n` +
+      `*THE HERITAGE FOUNDATION — FIELD OBSERVATION REPORT*\n` +
       `----------------------------------------\n` +
-      `📁 *Docket Ref:* ${docketVal || 'New Civic Violation Dossier'}\n` +
+      `📁 *Initiative Ref:* ${docketVal || 'New Field Observation'}\n` +
       `📍 *Taluk:* ${talukVal || 'Nilgiris District'}\n` +
-      `⚠️ *Violation:* ${violationVal || 'Unspecified'}\n` +
+      `⚠️ *Observation Category:* ${violationVal || 'Unspecified'}\n` +
       `🗺️ *Location / S.No:* ${locationVal || 'Coordinates Provided'}\n` +
       `🧭 *GPS / Maps Pin:* ${gpsVal || 'None'}\n` +
       (evidenceUrlVal ? `🔗 *Cloud Drive Link:* ${evidenceUrlVal}\n` : '') +
       `📝 *Ground Observations:*\n${descVal}\n` +
       `----------------------------------------\n` +
-      `👤 *Whistleblower:* ${isConfidential ? 'Strictly Confidential' : (nameVal || 'Anonymous') + (contactVal ? ` (${contactVal})` : '')}\n` +
+      `👤 *Submitted by:* ${isConfidential ? 'Confidential' : (nameVal || 'Anonymous') + (contactVal ? ` (${contactVal})` : '')}\n` +
       `----------------------------------------\n` +
       `*(Attached below: Field Photos / Drone Clips / Audio Evidence)*`
     );
@@ -438,7 +436,7 @@ function initFormspreeHandler() {
         statusAlert.style.display = 'block';
         statusAlert.innerHTML = `
           <strong>📱 WhatsApp Evidence Chat Initiated</strong><br>
-          WhatsApp has opened with your formatted docket template. Please tap <strong>Send</strong> in WhatsApp and attach your uncompressed photos, videos, or drone clips directly to our legal desk (+91 95005 81897).
+          WhatsApp has opened with your formatted docket template. Please tap <strong>Send</strong> in WhatsApp and attach your photos, videos, or observations directly to our field team (+91 95005 81897).
         `;
       }
     });
@@ -458,7 +456,7 @@ function initFormspreeHandler() {
 
     if (cloudflareSubmitBtn) {
       cloudflareSubmitBtn.disabled = true;
-      cloudflareSubmitBtn.innerHTML = 'Securing Dossier on Cloudflare...';
+      cloudflareSubmitBtn.innerHTML = 'Submitting Observation...';
     }
 
     if (statusAlert) {
@@ -491,11 +489,11 @@ function initFormspreeHandler() {
         statusAlert.className = 'form-status-alert success';
         statusAlert.style.display = 'block';
         statusAlert.innerHTML = `
-          <strong>✓ Report Lodged in Legal Ingestion Queue</strong><br>
-          Dossier Reference ID: <strong>${escapeHTML(reportRef)}</strong>.<br>
-          Your violation report has been recorded for statutory review. All whistleblower disclosures are strictly privileged.<br><br>
+          <strong>✓ Field Observation Received</strong><br>
+          Reference ID: <strong>${escapeHTML(reportRef)}</strong>.<br>
+          Your field observation has been recorded. Thank you for supporting our conservation and documentation efforts.<br><br>
           <a href="https://wa.me/${THF_CONFIG.WHATSAPP_NUMBER}" target="_blank" rel="noopener" style="color: #065F46; font-weight: bold; text-decoration: underline;">
-            Have heavy 4K videos or drone footage? Click to forward directly on WhatsApp (+91 95005 81897) ↗
+            Have high-resolution photos or drone footage? Click to share directly on WhatsApp (+91 95005 81897) ↗
           </a>
         `;
       }
@@ -1016,7 +1014,7 @@ function initCsrInquiryForm() {
 }
 
 /**
- * Support the Watchdog Two-Stage Modal Handler
+ * Technical & Scientific Support Two-Stage Modal Handler
  */
 function initSupportModal() {
   const modal = document.getElementById('support-watchdog-modal');
