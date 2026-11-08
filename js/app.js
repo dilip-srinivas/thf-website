@@ -7,7 +7,7 @@
 const THF_CONFIG = {
   WHATSAPP_NUMBER: '919500581897',
   WHATSAPP_DISPLAY: '+91 95005 81897',
-  EMAIL_CONTACT: 'advocacy@the-heritage.org',
+  EMAIL_CONTACT: 'info@the-heritage.org',
   CLOUDFLARE_API_REPORT: '/api/report',
   CLOUDFLARE_API_DONATE: '/api/donate'
 };
@@ -104,20 +104,11 @@ function getStatutoryDeadlineInfo(deadlineDateStr) {
   const diffTime = targetDate - now;
   const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
 
-  if (diffDays > 0) {
-    return {
-      text: `${diffDays} Day${diffDays === 1 ? '' : 's'} Remaining for Compliance`,
-      isUrgent: diffDays <= 7,
-      days: diffDays
-    };
-  } else {
-    const overdue = Math.abs(diffDays);
-    return {
-      text: `Statutory Window Elapsed (${overdue}d) — Pre-Litigation Escalation`,
-      isUrgent: true,
-      days: diffDays
-    };
-  }
+  return {
+    text: 'Active Representation Under Follow-up',
+    isUrgent: false,
+    days: diffDays
+  };
 }
 
 /**
@@ -275,7 +266,7 @@ function renderAllDockets(dockets, container) {
   if (dockets.length === 0) {
     container.innerHTML = `
       <div style="background: #FFFFFF; padding: 3rem; text-align: center; border-radius: var(--radius-md); border: 1px solid var(--color-stone-border);">
-        <p style="font-family: var(--font-display); font-size: 1.3rem; margin-bottom: 0.5rem;">No legal dockets match your search filter.</p>
+        <p style="font-family: var(--font-display); font-size: 1.3rem; margin-bottom: 0.5rem;">No initiatives match your search filter.</p>
         <p style="color: var(--color-charcoal-muted); font-size: 0.9rem;">Reset filters to inspect all active Nilgiri statutory dockets.</p>
       </div>
     `;
@@ -510,7 +501,7 @@ function initFormspreeHandler() {
           Recorded in the docket queue. You can also forward videos directly to WhatsApp: 
           <a href="https://wa.me/${THF_CONFIG.WHATSAPP_NUMBER}" target="_blank" rel="noopener" style="color: inherit; font-weight: bold; text-decoration: underline;">
             +91 95005 81897
-          </a> or <a href="mailto:advocacy@the-heritage.org" style="color: inherit; font-weight: bold; text-decoration: underline;">advocacy@the-heritage.org</a>.
+          </a> or <a href="mailto:info@the-heritage.org" style="color: inherit; font-weight: bold; text-decoration: underline;">info@the-heritage.org</a>.
         `;
       }
     } finally {
@@ -1001,7 +992,7 @@ function initCsrInquiryForm() {
         alertEl.className = 'form-status-alert error';
         alertEl.innerHTML = `
           <strong>Notice:</strong> Please send your CSR partnership parameters directly to our institutional team at 
-          <a href="mailto:advocacy@the-heritage.org" style="color: inherit; text-decoration: underline; font-weight: bold;">advocacy@the-heritage.org</a>.
+          <a href="mailto:info@the-heritage.org" style="color: inherit; text-decoration: underline; font-weight: bold;">info@the-heritage.org</a>.
         `;
       }
     } finally {
