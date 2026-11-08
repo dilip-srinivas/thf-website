@@ -241,6 +241,7 @@ p.lead {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 2.5rem;
   padding: 1.1rem 0;
 }
 
@@ -248,6 +249,8 @@ p.lead {
   display: flex;
   align-items: center;
   gap: 0.9rem;
+  flex-shrink: 0;
+  margin-right: 1.5rem;
 }
 
 .brand-logo-crest {
@@ -295,23 +298,25 @@ p.lead {
 .main-nav {
   display: flex;
   align-items: center;
-  gap: 2rem;
+  gap: 1.5rem;
+  flex-shrink: 1;
 }
 
 .nav-links {
   display: flex;
   align-items: center;
-  gap: 1.75rem;
+  gap: 1.35rem;
   list-style: none;
 }
 
 .nav-link {
-  font-size: 0.92rem;
+  font-size: 0.88rem;
   font-weight: 500;
   color: #D1D5DB;
   position: relative;
   padding: 0.35rem 0;
   letter-spacing: 0.01em;
+  white-space: nowrap;
 }
 
 .nav-link:hover,
@@ -2259,6 +2264,76 @@ textarea.form-control {
   .footer-grid {
     grid-template-columns: repeat(2, 1fr);
     gap: 2.5rem;
+  }
+}
+
+
+@media (max-width: 1200px) {
+  .nav-container {
+    gap: 1.25rem;
+  }
+  .brand-link {
+    margin-right: 0.5rem;
+  }
+  .nav-links {
+    gap: 0.95rem;
+  }
+  .main-nav {
+    gap: 1rem;
+  }
+  .nav-link {
+    font-size: 0.84rem;
+  }
+  .nav-actions {
+    gap: 0.5rem;
+  }
+  .nav-actions .btn-sm {
+    padding: 0.4rem 0.7rem;
+    font-size: 0.78rem;
+  }
+}
+
+@media (max-width: 980px) {
+  .brand-subtitle {
+    white-space: normal;
+    font-size: 0.62rem;
+    line-height: 1.25;
+  }
+
+  .main-nav {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: var(--color-shola-deep);
+    border-bottom: 2px solid var(--color-amber);
+    padding: 1.5rem;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.25rem;
+    box-shadow: var(--shadow-lg);
+  }
+
+  .main-nav.is-open {
+    display: flex;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+    width: 100%;
+  }
+
+  .nav-link {
+    width: 100%;
+    padding: 0.5rem 0;
+    border-bottom: 1px solid rgba(246, 245, 240, 0.08);
+  }
+
+  .mobile-nav-toggle {
+    display: block;
   }
 }
 
